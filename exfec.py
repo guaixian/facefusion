@@ -17,7 +17,7 @@ async def changeface(request:Request):
 		print(getdata)
 	except:
 		return 400
-	client = Client("http://127.0.0.1:7860",timeout=6000)
+	client = Client("http://127.0.0.1:7860")
 	source_path=getdata['source_path']
 	target_path=getdata['target_path']
 	result_1 = client.predict(
